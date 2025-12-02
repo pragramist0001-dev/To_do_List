@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TODO LIST</title>
+
+        <!-- Style -->
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>TODO LIST</h1>
+            
+            <div class="search-container">
+                <div class="search-wrapper">
+                    <input type="text" class="search-input" id="searchInput" placeholder="Search note...">
+                    <span class="search-icon">
+                        <img src="images/Vector.svg" alt="Vector.svg">
+                    </span>
+                </div>
+                <button class="filter-btn" id="filterBtn">ALL</button>
+            </div>
+
+            <ul class="todo-list" id="todoList">
+                <li class="todo-item">
+                    <div class="checkbox" data-id="1"></div>
+                    <span class="todo-text">NOTE #1</span>
+                    <div class="todo-actions">
+                        <button class="action-btn edit-btn" data-id="1">✏️</button>
+                        <button class="action-btn delete-btn" data-id="1">🗑️</button>
+                    </div>
+                </li>
+                <li class="todo-item">
+                    <div class="checkbox checked" data-id="2"></div>
+                    <span class="todo-text completed">NOTE #2</span>
+                    <div class="todo-actions">
+                        <button class="action-btn edit-btn" data-id="2">✏️</button>
+                        <button class="action-btn delete-btn" data-id="2">🗑️</button>
+                    </div>
+                </li>
+                <li class="todo-item">
+                    <div class="checkbox" data-id="3"></div>
+                    <span class="todo-text">NOTE #3</span>
+                    <div class="todo-actions">
+                        <button class="action-btn edit-btn" data-id="3">✏️</button>
+                        <button class="action-btn delete-btn" data-id="3">🗑️</button>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="add-todo">
+                <input type="text" class="add-input" id="addInput" placeholder="Add a new note...">
+                <button class="add-btn" id="addBtn">Add</button>
+            </div>
+        </div>
+
+        <!-- JS -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
